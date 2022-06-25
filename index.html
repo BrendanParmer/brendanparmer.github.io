@@ -28,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Projects</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Cool Stuff</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -41,8 +41,8 @@
                 <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Hello! My name's Brendan Parmer, and somehow you reached my little website. I'm a Math and Computer Science student studying at University of Illinois at Urbana-Champaign.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">I'm a Computer Graphics Software Engineer Intern at Brunswick's i-Jet Lab. I'm into computer graphics and all that good stuff.</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">Hello! My name's Brendan Parmer, and somehow you reached my little website. I study Math and Computer Science at University of Illinois at Urbana-Champaign.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">I'm a Computer Graphics Software Engineer Intern at Brunswick's i-Jet Lab. I like doing programming projects. I especially love computer graphics, though I'm interested in a lot of fields!</p></div>
                 </div>
             </div>
         </section>
@@ -51,21 +51,66 @@
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Cool Stuff</h2>
+                <br/> <!-- If you're a web dev recruiter and you just saw this, please forgive my formatting-->
+
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
+                    <!-- i-Jet -->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#iJet">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="https://ijetlab.com/static/media/logo_partial_background.82e914ee2eab68dd9999.png" alt="i-Jet logo" />
+                            <br/>
+                            <h3>i-Jet Lab</h3>
+                            <p class="lead">Computer Graphics Software Engineer Intern</p>
+                        </div>
+                    </div>
+                    <!-- Block On-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#BlockOn">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white">
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
                             <img class="img-fluid" src="https://github.com/BrendanParmer/Block-On/blob/imgs/imgs/build_animation.gif?raw=true" alt="Block On" />
+                            <br/>
+                            <h3>Block On</h3>
+                            <p class="lead">A Blender add-on to procedurally voxelize and materialize meshes</p>
                         </div>
-                        <h3>Block On</h3>
-                        <p>Blender add-on to procedurally voxelize and materialize meshes</p>
+                    </div>
+                    <!--Discord Bot-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#DiscordBot">
+                            <img class="img-fluid" src="/assets/img/discord.png" alt="Me interacting with my Discord Bot"/>
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <br/>
+                            <h3>Discord Bot</h3>
+                            <p class="lead">A Discord bot that makes bad dad jokes, posts weather updates, manages my Wordle league, responds to phrases, and more!</p>
+                        </div>
+                    </div>
+                    <!--CS 124-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#CS124">
+                            <img class="img-fluid" src="https://www.cs124.org/static/ca671851271662073b8f49137db16dc2/db8ac/top.png" alt="CS 124 Logo"/>
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <br/>
+                            <h3>CS 124 Course Assistant</h3>
+                            <p class="lead">Helping out students in UIUC's Introduction to Computer Science course.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,6 +120,7 @@
             <div class="container">
                 <!-- Contact Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Contact Me</h2>
+                <br/>
                     <div class="mb-5 mb-lg-0">
                         <p class="lead">The best way to reach me is at <a href="mailto:bjparmer@sbcglobal.net">bjparmer@sbcglobal.net</a>.</p>
                         <p class="lead">Also check me out all these places</p>
@@ -89,17 +135,56 @@
             <div class="container"><small>Copyright &copy; Brendan Parmer 2022</small></div>
         </div>
         <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <!-- iJet-->
+        <div class="portfolio-modal modal fade" id="iJet" tabindex="-1" aria-labelledby="iJet" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-header border-0"></div>
+                    <div class="modal-body text-start pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">i-Jet Lab</h2>
+                                    <br/>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid" src="https://ijetlab.com/static/media/logo_partial_background.82e914ee2eab68dd9999.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <div style="justify-content: left;">
+                                        <h1>Technology</h1>
+                                        <ul>
+                                            <li>Unreal</li>
+                                            <li>C++</li>
+                                            <li>Python</li>
+                                            <li>Blender</li>
+                                        </ul>
+                                        <h1>About</h1>
+                                        <p class="mb-4">I do stuff here and I have a fancy title</p>
+                                        <p class="mb-4">Learn more about what we do at <a href="https://ijetlab.com">ijetlab.com</a></p>
+                                    </div>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Block On-->
+        <div class="portfolio-modal modal fade" id="BlockOn" tabindex="-1" aria-labelledby="BlockOn" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"></div>
                     <div class="modal-body text-start pb-5">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Block On</h2>
+                                    <br/>
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="https://github.com/BrendanParmer/Block-On/blob/imgs/imgs/build_animation.gif?raw=true" alt="..." />
                                     <!-- Portfolio Modal - Text-->
@@ -119,7 +204,92 @@
                                             <li>and more!</li>
                                         </ul>
                                         <p class="mb-4">Using Geometry Nodes allows the user to easily build on top of the node network for their own needs. The variables are fully animatable, which can produce some really neat effects.</p>
-                                        <p class="mb-4">The project is currently in version 1.1 and is compatible with Blender 3.0-3.2, and I'm actively improving it.</p>
+                                        <p class="mb-4">The project is currently in version 1.1 and is compatible with Blender 3.0-3.2, and I'm actively improving it. You can play around with it on my <a href="https://github.com/BrendanParmer/Block-On">GitHub</a>.</p>
+                                    </div>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Discord Bot-->
+        <div class="portfolio-modal modal fade" id="DiscordBot" tabindex="-1" aria-labelledby="DiscordBot" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"></div>
+                    <div class="modal-body text-start pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Discord Bot</h2>
+                                    <br/>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="/assets/img/discord.png" alt="Discord Bot" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <div style="justify-content: left;">
+                                        <h1>Technology</h1>
+                                        <ul>
+                                            <li>Python</li>
+                                            <li>Heroku</li>
+                                        </ul>
+                                        <h1>About</h1>
+                                        <p class="mb-4">What would a Discord server be without a custom bot?</p>
+                                        <p class="mb-4">Using the Discord Python API I wrote a bot to "enhance" a friend group's server. Among other things, it</p>
+                                        <ul>
+                                            <li>Makes bad Dad jokes</li>
+                                            <li>Promotes our band on Spotify</li>
+                                            <li>Manages our Wordle league and score threads</li>
+                                            <li>Uses a weather API and sends a daily forecast</li>
+                                            <li>Periodically reminds members to be productive members of society</li>
+                                            <li>Responds and reacts to dozens of custom phrases</li>
+                                        </ul>
+                                        <p>This was an early project of mine, and it's where I really started to learn how to interact with other people's software in my own code. I also learned how to host a bot on a server, as well as asynchronous programming. I still maintain it and like to add new features. </p>
+                                        <p>A public version is available on my <a href="https://github.com/BrendanParmer/Discord-Bot">GitHub</a>.</p>
+                                    </div>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Discord Bot-->
+        <div class="portfolio-modal modal fade" id="CS124" tabindex="-1" aria-labelledby="CS124" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"></div>
+                    <div class="modal-body text-start pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">CS 124 Course Assistant</h2>
+                                    <br/>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="/assets/img/discord.png" alt="Discord Bot" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <div style="justify-content: left;">
+                                        <h1>Technology</h1>
+                                        <ul>
+                                            <li>Java</li>
+                                            <li>Kotlin</li>
+                                            <li>Android Studio</li>
+                                        </ul>
+                                        <h1>About</h1>
+                                        <p class="mb-4">After my freshman year I spent a semester tutoring students how to problem solve with programming.</p>
+                                        <p class="mb-4">Students came in from a variety of backgrounds, from majors to non-majors, freshmen to seniors, as well as people who had done some programming and total beginners. Learning to cater to each of their needs was a challenging task, but it's given me a better understanding of how to explain a concept or idea to different people.</p>
+                                        <p class="mb-4">Much of my work as a Course Assistant was helping the 1,277 students taking the course during Help Hours. Students hopped in a voice call with you, and you would clarify any confusion they had or try to lead them in the right direction, without giving away the answers. Aside from the 55 homework assignments, students also completed 3 machine problems, which guided them along making an app with a UI, a client, and a server with Android Studio. They had the choice of using Java or Kotlin for their assignments, so it was important to be flexible as a CA.</p>
+                                        <p class="mb-4">I learned a lot as a CA, and it gave me a new appreciation for explaining or documenting things well.</p>
                                     </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
