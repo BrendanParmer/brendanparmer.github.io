@@ -15,8 +15,16 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- Cool WebGL stuff-->
+        <script src="js/gl-matrix-min.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/test.js"></script>
     </head>
+
     <body id="page-top">
+        <canvas id="canvas"></canvas>
+        <script src="js/test.js"></script>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
@@ -34,9 +42,8 @@
                 </div>
             </div>
         </nav>
-
         <!-- Portfolio Section-->
-        <section class="page-section portfolio bg-primary text-white mb-0" id="portfolio">
+        <section class="page-section portfolio text-white mb-0" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Cool Stuff</h2>
@@ -55,7 +62,7 @@
                             <img class="img-fluid" src="https://ijetlab.com/static/media/logo_partial_background.82e914ee2eab68dd9999.png" alt="i-Jet logo" />
                             <br/>
                             <h3>i-Jet Lab</h3>
-                            <p class="lead">Computer Graphics Software Engineer Intern</p>
+                            <p class="lead">CES 2023, Synthetic Data Generation, and all things CG</p>
                         </div>
                     </div>
                     <!-- Block On-->
@@ -70,6 +77,20 @@
                             <br/>
                             <h3>Block On</h3>
                             <p class="lead">A Blender add-on to procedurally voxelize and materialize meshes</p>
+                        </div>
+                    </div>
+                    <!-- NodeToPython-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#NodeToPython">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="" alt="NodeToPython" />
+                            <br/>
+                            <h3>NodeToPython</h3>
+                            <p class="lead">A Blender add-on to make Blender add-ons</p>
                         </div>
                     </div>
                     <!--Discord Bot-->
@@ -122,7 +143,7 @@
                 <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Contact Me</h2>
                 <br/>
                     <div class="mb-5 mb-lg-0">
-                        <p class="lead">The best way to reach me is at <a href="mailto:bjparmer@sbcglobal.net">bjparmer@sbcglobal.net</a>.</p>
+                        <p class="lead">The best way to reach me is at <a href="mailto:brendanparmer+contact@gmail.com">brendanparmer+contact@gmail.com</a>.</p>
                         <p class="lead">Also check me out all these places</p>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/BrendanParmer"><i class="fab fa-github"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/brendan-parmer-b4125b213/"><i class="fab fa-fw fa-linkedin-in"></i></a>
@@ -148,19 +169,28 @@
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">i-Jet Lab</h2>
                                     <br/>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid" src="https://ijetlab.com/static/media/logo_partial_background.82e914ee2eab68dd9999.png" alt="..." />
+                                    <img src="/assets/img/city.png" alt="Procedural city with nearly 200 unique buildings" style="width: 100%;" />
                                     <!-- Portfolio Modal - Text-->
                                     <div style="justify-content: left;">
                                         <h1>Technology</h1>
                                         <ul>
-                                            <li>Unreal</li>
+                                            <li>Unreal Engine 4/5</li>
                                             <li>C++</li>
                                             <li>Python</li>
                                             <li>Blender</li>
                                         </ul>
                                         <h1>About</h1>
-                                        <p class="mb-4">I do stuff here and I have a fancy title</p>
+                                        <p class="mb-4">Since last November I've been working as a Computer Graphics Software Developer Intern at Brunswick's i-Jet lab. I've gotten to work on a lot of cool projects, including a boat simulator that will be featured at CES 2023. I've also done research into different technologies we can use to generate synthetic data for our autonomous boat algorithms.</p>
                                         <p class="mb-4">Learn more about what we do at <a href="https://ijetlab.com">ijetlab.com</a></p>
+                                        <h2>CES 2023 - Future Helm</h2>
+                                        <p class="mb-4">In January, we exhibited an immersive, photorealistic boat simulator at the Consumer Electronics Show in Las Vegas. Aside from programming gameplay and UI elements, I also had a chance to lead our procedural asset creation and sound design for the project. After CES, we'll use the Future Helm for prototyping new boat concepts, user-testing new UI features, and training new boaters in simulations.</p>
+                                        <h3>Procedural Asset Creation</h3>
+                                        <p class="mb-4">As we were designing a city for the project, we realized a lot of conventional building assets wouldn't fit into our vision of the environment. I came up with a solution to get us the style we wanted, without sacrificing too many hours to asset creation.</p>
+                                        <p class="mb-4">I chose Blender for the project because of its Geometry Nodes feature, a powerful node-based procedural modelling tool. All a user needs to do is draw a curve into the scene, and the add-on will take care of the rest. Users can tweak parameters such as the number of windows, materials, balconies, plants, height, lit windows, the building shape, and much more without having to dive into the node network. A city with hundreds of unique buildings that may've taken weeks to model beforehand now can be built within an afternoon.</p>
+                                        <h3>Sound Design</h3>
+                                        <p class="mb-4">I also have been working with Unreal Engine's MetaSounds. At the lab, we've got a 5.1 surround sound system set up, and it was fun handling the sound spatialization for our setup. I was able to control variables like pitch and volume directly from blueprints, which interfaced well with the rest of our project and made it easy to add and edit new sounds.</p>
+                                        <h2>Synthetic Data Generation</h2>
+                                        <p class="mb-4">One of the things I worked on was exploring CARLA for synthetic data generation. Though the plugin was originally designed with cars in mind, I adapted it for the marine world, figuring out how to get it to interact with water physics, spawn self-driving boats, and collect valuable sensor data. The project had a Python API where you could program the weather, time of day, and generate different traffic conditions. While we didn't choose CARLA in the end, learning the platform's strengths and weaknesses was important in developing our final synthetic data generation architecture.</p>
                                     </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
@@ -276,7 +306,7 @@
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">CS 124 Course Assistant</h2>
                                     <br/>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid" src="https://www.cs124.org/static/ca671851271662073b8f49137db16dc2/db8ac/top.png" alt="CS 124 Logo"/>
+                                    <img class="img-fluid" src="https://www.cs124.org/static/ca671851271662073b8f49137db16dc2/cbb3a/top.png" alt="CS 124 Logo"/>
                                     <!-- Portfolio Modal - Text-->
                                     <div style="justify-content: left;">
                                         <h1>Technology</h1>
@@ -290,6 +320,43 @@
                                         <p class="mb-4">Students came in from a variety of backgrounds, from majors to non-majors, freshmen to seniors, as well as people who had done some programming and total beginners. Learning to cater to each of their needs was a challenging task, but it's given me a better understanding of how to explain a concept or idea to different people.</p>
                                         <p class="mb-4">Much of my work as a Course Assistant was helping the 1,277 students taking the course during Help Hours. Students hopped in a voice call with you, and you would clarify any confusion they had or try to lead them in the right direction, without giving away the answers. Aside from the 55 homework assignments, students also completed 3 machine problems, which guided them along making an app with a UI, a client, and a server with Android Studio. They had the choice of using Java or Kotlin for their assignments, so it was important to be flexible as a CA.</p>
                                         <p class="mb-4">I learned a lot as a CA, and it gave me a new appreciation for explaining or documenting things well.</p>
+                                    </div>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--NodeToPython-->
+        <div class="portfolio-modal modal fade" id="NodeToPython" tabindex="-1" aria-labelledby="NodeToPython" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"></div>
+                    <div class="modal-body text-start pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">NodeToPython</h2>
+                                    <br/>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid" src="" alt="NodeToPython"/>
+                                    <!-- Portfolio Modal - Text-->
+                                    <div style="justify-content: left;">
+                                        <h1>Technology</h1>
+                                        <ul>
+                                            <li>Blender</li>
+                                            <li>Python</li>
+                                        </ul>
+                                        <h1>About</h1>
+                                        <p class="mb-4">I love making things with Geometry Nodes, but there wasn't a great way of distributing these to people. However, Blender lets people code add-ons with Python scripts, which are much easier to distribute than binary .blend files. I wrote an add-on to write add-ons given a Geometry Node group.</p>
+                                        <p>While it only works with Geometry Nodes right now, I plan on expanding it to Blender's Shader and Compositing nodes, as well. The developers are planning Everything Nodes, in which more and more of the engine get the power of a procedural workflow, which my add-on will be helpful with.</p>
+                                        <p>You can play around with it on my <a href="https://github.com/BrendanParmer/NodeToPython">GitHub</a></p>
                                     </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
