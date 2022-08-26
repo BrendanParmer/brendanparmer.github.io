@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="List of Brendan Parmer's projects" />
+        <meta name="author" content="Brendan Parmer" />
+        <title>Brendan Parmer</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <nav class="navbar bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <div>
+                    <a class="navbar-brand" href="/index.html">Brendan Parmer</a>
+                    <p>&#x2022 Software Developer &#x2022 Technical Artist &#x2022 Graphics Programmer</p>
+                </div>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#ces2023">CES 2023</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#carla">CARLA</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#blockon">Block On</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#nodetopython">NodeToPython</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#cs124">CS 124</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <!--CES 2023-->
+        <section class="page-section" id="ces2023">
+            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Brunswick CES 2023</h2>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <img class="img-fluid" src="" alt="CES image here" />
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5" style="display: flex; justify-content: center; align-items: center;">
+                    <div>
+                        <h3>An immersive boating experience coming soon to the global stage...</h3>
+                        <p class="lead">Working in a core team of six people, we quickly built a state-of-the-art, fully immersive, Triple-A-quality boating simulator for Brunswick's 2023 Consumer Electronics Show exhibit. To make it as realistic as possible while telling the story of Brunswick's new technological capabilities, we needed to tackle problems in a wide variety of domains, including physics, UI, gameplay, animation, specialized hardware, asset creation, sound design, rendering, and more.</p>
+                        <p class="lead"><a href="/projects/ces2023.html">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Carla -->
+        <section class="page-section" id="carla">
+            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Synthetic Data Generation with CARLA</h2>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <img class="img-fluid" src="" alt="CARLA image here">
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div>
+                        <h3>Training machine learning models with the power of Unreal Engine</h3>
+                        <p class="lead">Today's modern artificial intelligence systems require a lot of data to train on. As Brunswick develops its autonomous boating capabilities, we find ourselves in need of more training data. This data is often hard to collect, as many of the situations we want to test for may be too dangerous for human drivers, or too rare to test too often. I explored CARLA as a potential solution to this problem. It's an open-source plugin for Unreal originally intended for training autonomous cars and other land vehicles. I adapted the system for a marine environment. With this modified version, we could control boat traffic, the weather, time of day, the environment, and even more, while recorded simulated sensor data like RGB cameras, stereocameras, and LiDAR sensors.</p>
+                        <p class="lead"><a href="/projects/carla.html">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Block On -->
+        <section class="page-section" id="blockon">
+            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Block On</h2>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <img class="img-fluid" src="https://github.com/BrendanParmer/Block-On/blob/imgs/imgs/build_animation.gif?raw=true" alt="GIF of a voxelized monkey head constructing itself">
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div>
+                        <h3>Procedural voxelization in Blender</h3>
+                        <p class="lead">Blender's native voxelization is clunky. It's a slow and destructive process, one that I wanted to improve. I created a Python add-on that allows artists to quickly voxelize their 3D models without needing to retexture their models. The plugin gives the artist more control and to find new ways of expressing ideas in the style. With Geometry Nodes, the plugin is completely procedural, allowing for quick variations and expansions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NodeToPython-->
+        <section class="page-section" id="nodetopython">
+            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">NodeToPython</h2>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <img class="img-fluid" src="https://github.com/BrendanParmer/NodeToPython/blob/main/img/ntp.jpg?raw=true" alt="NodeToPython">
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div>
+                        <h3>Converting Geometry Node groups to add-ons</h3>
+                        <p class="lead">Blender's procedural geometry system is an incredible tool, but distributing node setups isn't the easiest process. Previously, one would have to share the entire project file just to share these node groups. I coded a Blender add-on that analyzes Geometry Node networks and creates a Python script to replicate it. Artists and add-on creators can now contribute to Blender's ecosystem and easily share their work without needing to know how to code.</p>
+                        <p class="lead"><a href="/projects/nodetopython.html">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CS 124-->
+        <section class="page-section" id="cs124">
+            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">CS 124</h2>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <img class="img-fluid" src="https://www.cs124.org/static/ca671851271662073b8f49137db16dc2/cbb3a/top.png" alt="CS 124 Logo">
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div>
+                        <h3>Tutoring the fundamentals of computer science with Java and Kotlin</h3>
+                        <p class="lead">I was a course assistant for CS 124, UIUC's introductory computer science course. During tutoring hours I helped the software engineers of tomorrow learn the fundamentals of programming. I taught Android app development, clarified concepts about data structures and algorithms, and got to meet a lot of interesting students.</p>
+                        <p class="lead"><a href="/projects/cs124.html">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Brendan Parmer 2022</small></div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
