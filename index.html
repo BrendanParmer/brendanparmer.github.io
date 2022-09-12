@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Brendan Parmer's magical website of fun and sometimes programming stuff" />
-        <meta name="author" content="Brendan Parmerj" />
+        <meta name="author" content="Brendan Parmer" />
         <title>Brendan Parmer</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -15,12 +15,23 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- Cool WebGL stuff-->
+        <script src="js/gl-matrix-min.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/test.js"></script>
     </head>
+
     <body id="page-top">
+        <canvas id="canvas"></canvas>
+        <script src="js/test.js"></script>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Brendan Parmer</a>
+                <div>
+                    <a class="navbar-brand" href="#page-top">Brendan Parmer</a>
+                    <p>&#x2022 Software Developer &#x2022 Technical Artist &#x2022 Graphics Programmer</p>
+                </div>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -34,9 +45,8 @@
                 </div>
             </div>
         </nav>
-
         <!-- Portfolio Section-->
-        <section class="page-section portfolio bg-primary text-white mb-0" id="portfolio">
+        <section class="page-section portfolio text-white mb-0" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Cool Stuff</h2>
@@ -44,63 +54,52 @@
 
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
-                    <!-- i-Jet -->
+                    <!-- CES 2023 -->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#iJet">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#ces2023">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white">
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="https://ijetlab.com/static/media/logo_partial_background.82e914ee2eab68dd9999.png" alt="i-Jet logo" />
+                            <img class="img-fluid" src="/assets/img/ces2023.jpg" alt="CES 2023" />
                             <br/>
-                            <h3>i-Jet Lab</h3>
-                            <p class="lead">Computer Graphics Software Engineer Intern</p>
+                            <h3>Brunswick CES 2023</h3>
+                            <p class="lead">An immersive boating experience coming to the global event...</p>
                         </div>
                     </div>
-                    <!-- Block On-->
+                    <!-- CARLA -->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#BlockOn">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#carla">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white">
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="https://github.com/BrendanParmer/Block-On/blob/imgs/imgs/build_animation.gif?raw=true" alt="Block On" />
+                            <img class="img-fluid" src="/assets/img/carla.png" alt="CARLA Image" />
                             <br/>
-                            <h3>Block On</h3>
-                            <p class="lead">A Blender add-on to procedurally voxelize and materialize meshes</p>
+                            <h3>Synthetic Data Generation with CARLA</h3>
+                            <p class="lead">Training machine learning models with the power of Unreal Engine</p>
                         </div>
                     </div>
-                    <!--Discord Bot-->
+                    <!-- Addon Development-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#DiscordBot">
-                            <img class="img-fluid" src="/assets/img/discord.png" alt="Me interacting with my Discord Bot"/>
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#blender">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white">
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
+                            <img class="img-fluid" src="/assets/img/addon.jpg" alt="Addon image" />
                             <br/>
-                            <h3>Discord Bot</h3>
-                            <p class="lead">A Discord bot that makes bad dad jokes, posts weather updates, manages my Wordle league, responds to phrases, and more!</p>
-                        </div>
-                    </div>
-                    <!--CS 124-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#CS124">
-                            <img class="img-fluid" src="https://www.cs124.org/static/ca671851271662073b8f49137db16dc2/db8ac/top.png" alt="CS 124 Logo"/>
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <br/>
-                            <h3>CS 124 Course Assistant</h3>
-                            <p class="lead">Helping out students in UIUC's Introduction to Computer Science course.</p>
+                            <h3>Blender Add-On Development</h3>
+                            <p class="lead">Expanding Blender with Python add-ons</p>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div style="text-align: center; margin: auto;">
+                <a class="btn btn-outline-light" href="/projects/overview.html">Check out more projects here!</a> 
             </div>
         </section>
         <!-- About Section-->
@@ -110,8 +109,8 @@
                 <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Hello! My name's Brendan Parmer, and somehow you reached my little website. I study Math and Computer Science at University of Illinois at Urbana-Champaign.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">I'm a Computer Graphics Software Engineer Intern at Brunswick's i-Jet Lab. I like doing programming projects. I especially love computer graphics, though I'm interested in a lot of fields!</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">Hello! My name's Brendan Parmer. I'm a software engineer, technical artist, and all-around CG generalist.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Right now I'm wrapping up my degree in Math and Computer Science at the University of Illinois in Urbana-Champaign. I'm currently working at Brunswick Corporation's iJet Lab in a computer graphics role.</p></div>
                 </div>
             </div>
         </section>
@@ -122,11 +121,11 @@
                 <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Contact Me</h2>
                 <br/>
                     <div class="mb-5 mb-lg-0">
-                        <p class="lead">The best way to reach me is at <a href="mailto:brendanparmer+contact@gmail.com">brendanparmer+contact@gmail.com</a>.</p>
+                        <p class="lead">The best way to reach me is at <a href="mailto:brendanparmer+contact@gmail.com">brendanparmer+contact@gmail.com</a></p>
                         <p class="lead">Also check me out all these places</p>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/BrendanParmer"><i class="fab fa-github"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="www.linkedin.com/in/brendan-parmer"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <p class="lead">or take a look at my <a href="/resume.html">resume</a>!</p>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/brendan-parmer-b4125b213/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <p class="lead">or take a look at my <a href="/assets/resume.pdf">resume</a>!</p>
                     </div>
             </div>
         </footer>
@@ -135,8 +134,8 @@
             <div class="container"><small>Copyright &copy; Brendan Parmer 2022</small></div>
         </div>
         <!-- Portfolio Modals-->
-        <!-- iJet-->
-        <div class="portfolio-modal modal fade" id="iJet" tabindex="-1" aria-labelledby="iJet" aria-hidden="true">
+        <!-- CES 2023-->
+        <div class="portfolio-modal modal fade" id="ces2023" tabindex="-1" aria-labelledby="ces2023" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"></div>
@@ -145,22 +144,20 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">i-Jet Lab</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">CES 2023</h2>
                                     <br/>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid" src="https://ijetlab.com/static/media/logo_partial_background.82e914ee2eab68dd9999.png" alt="..." />
+                                    <img src="/assets/img/ces2023.jpg" alt="CES 2023" style="width: 100%;" />
                                     <!-- Portfolio Modal - Text-->
                                     <div style="justify-content: left;">
                                         <h1>Technology</h1>
                                         <ul>
-                                            <li>Unreal</li>
-                                            <li>C++</li>
-                                            <li>Python</li>
-                                            <li>Blender</li>
+                                            <li class="lead">Unreal Engine 5</li>
+                                            <li class="lead">C++</li>
+                                            <li class="lead">Blender</li>
                                         </ul>
                                         <h1>About</h1>
-                                        <p class="mb-4">I do stuff here and I have a fancy title</p>
-                                        <p class="mb-4">Learn more about what we do at <a href="https://ijetlab.com">ijetlab.com</a></p>
+                                        <p class="mb-4">Over the summer my team and I built a photorealistic, realtime experience that will be exhibited at CES 2023. I was responsible for a wide variety of tasks as we were building the project, including gameplay programming, architecture design, procedural asset creation, and sound design. Breakdowns and more details to come after the event!</p>
                                     </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
@@ -173,8 +170,8 @@
                 </div>
             </div>
         </div>
-        <!-- Block On-->
-        <div class="portfolio-modal modal fade" id="BlockOn" tabindex="-1" aria-labelledby="BlockOn" aria-hidden="true">
+        <!-- CARLA-->
+        <div class="portfolio-modal modal fade" id="carla" tabindex="-1" aria-labelledby="carla" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"></div>
@@ -183,18 +180,64 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Block On</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Synthetic Data Generation with CARLA</h2>
                                     <br/>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="https://github.com/BrendanParmer/Block-On/blob/imgs/imgs/build_animation.gif?raw=true" alt="..." />
+                                    <img src="/assets/img/carla.png" alt="CARLA image here" style="width: 100%;" />
                                     <!-- Portfolio Modal - Text-->
                                     <div style="justify-content: left;">
                                         <h1>Technology</h1>
                                         <ul>
-                                            <li>Python</li>
-                                            <li>Blender</li>
+                                            <li class="lead">Unreal Engine 4</li>
+                                            <li class="lead">Python</li>
                                         </ul>
                                         <h1>About</h1>
+                                        <p class="mb-4">Today's artificial intelligence systems require a lot of data to train on. As Brunswick develops its autonomous boating capabilities, we find ourselves in need of more and more training data. This data is often hard to collect, as many of the situations we want to test for may be too dangerous for human drivers, or too rare to test too often. I explored CARLA as a potential solution to this problem. CARLA is an open-source plugin for Unreal, originally intended for virtually training autonomous cars and other land vehicles. I adapted the system for a marine environment. With this modified version, we could control boat traffic, the weather, time of day, the environment, and even more, while recording simulated sensor data like RGB cameras, stereocameras, and LiDAR sensors.</p>
+                                    </div>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blender Addons-->
+        <div class="portfolio-modal modal fade" id="blender" tabindex="-1" aria-labelledby="blender" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"></div>
+                    <div class="modal-body text-start pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Blender add-on development</h2>
+                                    <br/>
+                                    <!-- Portfolio Modal - Image-->
+                                    <table style="margin-left: auto; margin-right: auto;">
+                                        <tr>
+                                            <td>
+                                                <img class="img-fluid rounded mb-5" src="https://github.com/BrendanParmer/Block-On/blob/imgs/imgs/build_animation.gif?raw=true" alt="Animation created with the Block On addon" />
+                                            </td>
+                                            <td>
+                                                <img class="img-fluid rounded mb-5" src="https://github.com/BrendanParmer/NodeToPython/blob/main/img/ntp.jpg?raw=true" alt="Node To Python" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- Portfolio Modal - Text-->
+                                    <div style="justify-content: left;">
+                                        <h1>Technology</h1>
+                                        <ul>
+                                            <li class="lead">Python</li>
+                                            <li class="lead">Blender</li>
+                                        </ul>
+                                        <h1>About</h1>
+                                        <p class="mb-4">3D computer graphics is a big passion of mine, and Blender's API makes it possible for me to combine my programming knowledge with the art world. I've released a couple add-ons so far. <a href="https://github.com/BrendanParmer/Block-On">Block On</a> is a procedural voxelization addon I designed to address some of the issues with Blender's in-built voxelization tool. <a href="https://github.com/BrendanParmer/NodeToPython">Node To Python</a> is an addon that allows users to convert large node groups to simple Python scripts, which makes addon development much easier when working with these node groups.</p>
+                                        <h2>Block On</h2>
                                         <p class="mb-4">I created this add-on as a way to instantly turn any 3D object into a blocky version of itself within Blender.</p>
                                         <p class="mb-4">Blender's built-in voxelization modifier doesn't preserve material information, and it can be somewhat slow. Block On uses Geometry Nodes to not only quickly voxelize the object, but also give the user control over more variables, including:</p>
                                         <ul>
@@ -204,92 +247,10 @@
                                             <li>and more!</li>
                                         </ul>
                                         <p class="mb-4">Using Geometry Nodes allows the user to easily build on top of the node network for their own needs. The variables are fully animatable, which can produce some really neat effects.</p>
-                                        <p class="mb-4">The project is currently in version 1.1 and is compatible with Blender 3.0-3.2, and I'm actively improving it. You can play around with it on my <a href="https://github.com/BrendanParmer/Block-On">GitHub</a>.</p>
-                                    </div>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Discord Bot-->
-        <div class="portfolio-modal modal fade" id="DiscordBot" tabindex="-1" aria-labelledby="DiscordBot" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"></div>
-                    <div class="modal-body text-start pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Discord Bot</h2>
-                                    <br/>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="rounded mb-5" src="/assets/img/discord.png" alt="Discord Bot" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <div style="justify-content: left;">
-                                        <h1>Technology</h1>
-                                        <ul>
-                                            <li>Python</li>
-                                            <li>Heroku</li>
-                                        </ul>
-                                        <h1>About</h1>
-                                        <p class="mb-4">What would a Discord server be without a custom bot?</p>
-                                        <p class="mb-4">Using the Discord Python API I wrote a bot to "enhance" a friend group's server. Among other things, it</p>
-                                        <ul>
-                                            <li>Makes bad Dad jokes</li>
-                                            <li>Promotes our band on Spotify</li>
-                                            <li>Manages our Wordle league and score threads</li>
-                                            <li>Uses a weather API and sends a daily forecast</li>
-                                            <li>Periodically reminds members to be productive members of society</li>
-                                            <li>Responds and reacts to dozens of custom phrases</li>
-                                        </ul>
-                                        <p>This was an early project of mine, and it's where I really started to learn how to interact with other people's software in my own code. I also learned how to host a bot on a server, as well as asynchronous programming. I still maintain it and like to add new features. </p>
-                                        <p>A public version is available on my <a href="https://github.com/BrendanParmer/Discord-Bot">GitHub</a>.</p>
-                                    </div>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--CS 124-->
-        <div class="portfolio-modal modal fade" id="CS124" tabindex="-1" aria-labelledby="CS124" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"></div>
-                    <div class="modal-body text-start pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">CS 124 Course Assistant</h2>
-                                    <br/>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid" src="https://www.cs124.org/static/ca671851271662073b8f49137db16dc2/db8ac/top.png" alt="CS 124 Logo"/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <div style="justify-content: left;">
-                                        <h1>Technology</h1>
-                                        <ul>
-                                            <li>Java</li>
-                                            <li>Kotlin</li>
-                                            <li>Android Studio</li>
-                                        </ul>
-                                        <h1>About</h1>
-                                        <p class="mb-4">After my freshman year I spent a semester tutoring students how to problem solve with programming.</p>
-                                        <p class="mb-4">Students came in from a variety of backgrounds, from majors to non-majors, freshmen to seniors, as well as people who had done some programming and total beginners. Learning to cater to each of their needs was a challenging task, but it's given me a better understanding of how to explain a concept or idea to different people.</p>
-                                        <p class="mb-4">Much of my work as a Course Assistant was helping the 1,277 students taking the course during Help Hours. Students hopped in a voice call with you, and you would clarify any confusion they had or try to lead them in the right direction, without giving away the answers. Aside from the 55 homework assignments, students also completed 3 machine problems, which guided them along making an app with a UI, a client, and a server with Android Studio. They had the choice of using Java or Kotlin for their assignments, so it was important to be flexible as a CA.</p>
-                                        <p class="mb-4">I learned a lot as a CA, and it gave me a new appreciation for explaining or documenting things well.</p>
+                                        <p class="mb-4">The project is currently in version 1.1 and is compatible with Blender 3.0-3.3, and I'm actively improving it.</p>
+                                        <h2>Node To Python</h2>
+                                        <p class="mb-4">I love making things with Geometry Nodes, but there wasn't a great way of distributing these to people. However, Blender lets people code add-ons with Python scripts, which are much easier to distribute than binary .blend files. I wrote an add-on to write add-ons given a Geometry Node group.</p>
+                                        <p>While it only works with Geometry Nodes right now, I plan on expanding it to Blender's Shader and Compositing nodes, as well. The developers are planning Everything Nodes, in which more and more of the engine get the power of a procedural workflow, which my add-on will be helpful with.</p>
                                     </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
