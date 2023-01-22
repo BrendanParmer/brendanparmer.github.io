@@ -64,8 +64,8 @@
                             </div>
                             <img class="img-fluid" src="/assets/img/ces2023.jpg" alt="CES 2023" />
                             <br/>
-                            <h3>Brunswick CES 2023</h3>
-                            <p class="lead">An immersive boating experience coming to the global event...</p>
+                            <h3>Future Helm @ Brunswick CES 2023</h3>
+                            <p class="lead">An immersive boating simulator displayed to thousands of attendees</p>
                         </div>
                     </div>
                     <!-- CARLA -->
@@ -160,10 +160,36 @@
                                             <li class="lead">Blender</li>
                                         </ul>
                                         <h1>About</h1>
-                                        <p class="mb-4">Over the summer my team and I built a photorealistic, realtime experience that will highlight new technologies in the marine world at the Consumer Electronics Show in January. I was responsible for a wide variety of tasks as we were building the project, including gameplay programming, architecture design, procedural asset creation, and sound design.
-                                        <p class="mb-4">One of my favorite subprojects was creating procedural assets for the project. As we were designing our environment, we realized we would need hundreds of custom assets. I used Blender and Python to create an extensive tool to procedurally model and texture game-ready assets, with minimal manual labor needed.</p>
-                                        <p class="mb-4">Results from our alpha release at the end of summer have been really promising. User testing has gone well and corporate leadership has been impressed with the project.</p>
-                                        <p class="mb-4">Breakdowns and more details to come after the event!</p>
+                                        <p class="mb-4">
+                                            I had a blast making this thing. Over the summer and through the fall semester, I built a photorealistic, realtime boat simulator. Displayed to tens of thousands of people at the 2023 Consumer Electronics Show, the simulator, called the Future Helm, let people drive a boat with a 140 degree screen displaying their surroundings. It demonstrated new boating technologies Brunswick is developing, such as auto-docking and collision avoidance. Additionally, Brunswick is able to easily mock up and test out new MFD UIs and other features, without having to implement them on an actual boat.
+                                        </p>
+                                        <p class="mb-4">
+                                            This has definitely my favorite project I've done so far in my career. I learned an awful lot during this experience. Obviously there was a lot of cool technical stuff like different aspects realtime graphics development and virtual production. But I also got a better sense of how to effectively collaborate with people from all different backgrounds on a large project, whether they be executives or designers giving us feedback on how better to achieve Brunswick's business goals at CES, long-time boaters who helped us get the physics feeling realistic, mechanical and electrical engineers when we had hardware questions, and of course within the graphics team implementing all this. We were doing new things and coming up with creative solutions, and that's the essence of why I love this field.
+                                        </p>
+                                        <h1>Development</h1>
+                                        <p class="mb-4">
+                                            I wore a variety of hats as we were building the project, including gameplay programming, architecture design, procedural asset creation, sound design, and UI implementation. Basically, whatever needed done, I was happy to find a way to do.
+                                        </p>
+                                        <p class="mb-4">
+                                            Me, four other interns, and our full-time lead started implementing the design team's vision for the project in early May. We worked well together and quickly blew past our goals for the summer. We'd brainstorm together to solve challenges we were facing from both a technical and design perspecitive, and regularly met up with people from across the organization to pick their brains. We also conducted biweekly user tests to get a gauge of our progress and how people responded to it. At the end of the summer, our team of interns was recognized as a finalist for "Most Competentent and Collaborative Team" at UIUC's Research Park, and Brunswick's executives were blown away by our progress.
+                                        </p>
+                                        <p class="mb-4">
+                                            Throughout the fall semester, we kept refining and improving the project, spending a lot of late nights at the office to get it prepped and bug-free for the show. At the end of the semester, we shipped it off after a final build.
+                                        </p> 
+                                        <h1>Technical Details</h1>
+                                        <p class="mb-4">
+                                            The helm itself is built much like an actual boat is. It has a real throttle, joystick, and steering wheel, which send CAN messages that we then decoded with a Python script. From there, we could use that as input into Unreal Engine 5, the game engine we were running the project off of. We chose Unreal for its massive library of free assets, the astonishing advancements in rendering that come with Nanite and Lumen, and its ability to do virtual production with nDisplay.
+                                        </p>
+                                        <p class="mb-4">
+                                            There were two main displays: the wraparound, 140 degree screen, and the MFD, which displayed notifications and info like speed, direction, and battery life much like a car. Both of these displays ran off of a separate computer connected by Ethernet.
+                                        </p>
+                                        <p class="mb-4">
+                                            One of my favorite subprojects was creating procedural assets for the project. As we were designing our environment, we realized we would need hundreds of custom assets. I used Blender and Python to create an extensive tool to procedurally model and texture game-ready assets, with minimal manual labor needed.
+                                        </p>
+                                        <h1>Response</h1>
+                                        <p class="mb-4">
+                                            The response to the Future Helm was an overwhelming success, from attendees to the media. A few journalists listed the Future Helm as one of the top things to see at the show. NBC opened their coverage of all CES at Brunswick's exhibit. It was so realistic that a few people thought we installed actuators in the floor to simulate the bobbing motion of a boat. Our graphics team was particularly happy that people from Epic Games kept coming over to check out what we accomplished with their game engine. The U.S. Secretary of Energy even took it out for a spin. The Future Helm was the centerpiece of the Brunswick exhibit, and it helped establish the company as a major player not just in the boating world, but in the tech industry as a whole.
+                                        </p>
                                     </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
