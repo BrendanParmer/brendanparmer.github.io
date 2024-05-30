@@ -30,7 +30,6 @@
             <div class="container">
                 <div>
                     <a class="navbar-brand" href="#page-top">Brendan Parmer</a>
-                    <p>&#x2022 Software Developer &#x2022 Technical Artist &#x2022 Graphics Programmer</p>
                 </div>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -38,70 +37,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Cool Stuff</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio text-white mb-0" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Cool Stuff</h2>
-                <br/> <!-- If you're a web dev recruiter and you just saw this, please forgive my formatting-->
-
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- CES 2023 -->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#ces2023">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="/assets/img/ces2023.jpg" alt="CES 2023" />
-                            <br/>
-                            <h3>Future Helm @ Brunswick CES 2023</h3>
-                            <p class="lead">An immersive boating simulator displayed to thousands of attendees</p>
-                        </div>
-                    </div>
-                    <!-- CARLA -->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#carla">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="/assets/img/carla.png" alt="CARLA Image" />
-                            <br/>
-                            <h3>Synthetic Data Generation with CARLA</h3>
-                            <p class="lead">Training machine learning models with the power of Unreal Engine</p>
-                        </div>
-                    </div>
-                    <!-- Addon Development-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#blender">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="/assets/img/addon.jpg" alt="Addon image" />
-                            <br/>
-                            <h3>Blender Add-On Development</h3>
-                            <p class="lead">Expanding Blender with Python add-ons</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style="text-align: center; margin: auto;">
-                <a class="btn btn-outline-light" href="/projects/overview.html">Check out more projects here!</a> 
-            </div>
-        </section>
         <!-- About Section-->
         <section class="page-section" id="about">
             <div class="container">
@@ -109,8 +50,15 @@
                 <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Hello! My name's Brendan Parmer. I'm a software engineer, technical artist, and all-around CG generalist.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">Right now I'm wrapping up my Bachelor's in Math and Computer Science at the University of Illinois Urbana-Champaign. I'm currently working as a Computer Graphics Software Engineer Intern at <a href="https://www.frasca.com/">Frasca International</a>, where I make cool flight simulators.</p></div>
+                    <div class="col-lg-4 ms-auto">
+                        <p class="lead">Hello! My name's Brendan Parmer. I'm a computer graphics software engineer.</p>
+                        <p class="lead">In recent years I've been focused on building multi-display, immersive experiences with tools like Unreal Engine and C++. I've gotten to work on some really interesting problems.</p>
+                        <p class="lead">Currently I work at Frasca, where we've brought a new commercial flight simulator from conceptualization to FAA qualification in a matter of months. We're tackling challenges like strict FAA regulations and customer expectations on quality and performance, latency between a pilot moving the joystick and seeing the result simultaneously on multiple projectors, and even the size and shape of the Earth.</p>
+                    </div>
+                    <div class="col-lg-4 me-auto">
+                        <p class="lead">I've also had the opportunity to work at Brunswick Corporation. During the summer of 2022, we developed a simulated boating experience for the company's 2023 CES exhibit, bringing an immersive ocean marina to the convention's desert location.</p>
+                        <p class="lead">In my spare time I've developed <a href="https://github.com/BrendanParmer/NodeToPython">Node To Python</a>, a tool that converts Blender node groups into Python code for easier scripting.</p>
+                        <p class="lead">I recently graduated from University of Illinois Urbana-Champaign with a degree in Math and Computer Science. </p></div>
                 </div>
             </div>
         </section>
@@ -131,167 +79,7 @@
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Brendan Parmer 2022-2023</small></div>
-        </div>
-        <!-- Portfolio Modals-->
-        <!-- CES 2023-->
-        <div class="portfolio-modal modal fade" id="ces2023" tabindex="-1" aria-labelledby="ces2023" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"></div>
-                    <div class="modal-body text-start pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">CES 2023</h2>
-                                    <br/>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img src="/assets/img/ces2023.jpg" alt="CES 2023" style="width: 100%;" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <div style="justify-content: left;">
-                                        <h1>Technology</h1>
-                                        <ul>
-                                            <li class="lead">Unreal Engine 5</li>
-                                            <li class="lead">Perforce</li>
-                                            <li class="lead">C++</li>
-                                            <li class="lead">Python</li>
-                                            <li class="lead">Blender</li>
-                                        </ul>
-                                        <h1>About</h1>
-                                        <p class="mb-4">
-                                            I had a blast making this thing. Over the summer and through the fall semester, I built a photorealistic, realtime boat simulator. Displayed to tens of thousands of people at the 2023 Consumer Electronics Show, the simulator, called the Future Helm, let people drive a boat with a 140 degree screen displaying their surroundings. It demonstrated new boating technologies Brunswick is developing, such as auto-docking and collision avoidance. Additionally, Brunswick is able to easily mock up and test out new MFD UIs and other features, without having to implement them on an actual boat.
-                                        </p>
-                                        <p class="mb-4">
-                                            This has definitely my favorite project I've done so far in my career. I learned an awful lot during this experience. Obviously there was a lot of cool technical stuff like different aspects realtime graphics development and virtual production. But I also got a better sense of how to effectively collaborate with people from all different backgrounds on a large project, whether they be executives or designers giving us feedback on how better to achieve Brunswick's business goals at CES, long-time boaters who helped us get the physics feeling realistic, mechanical and electrical engineers when we had hardware questions, and of course within the graphics team implementing all this. We were doing new things and coming up with creative solutions, and that's the essence of why I love this field.
-                                        </p>
-                                        <h1>Development</h1>
-                                        <p class="mb-4">
-                                            I wore a variety of hats as we were building the project, including gameplay programming, architecture design, procedural asset creation, sound design, and UI implementation. Basically, whatever needed done, I was happy to find a way to do.
-                                        </p>
-                                        <p class="mb-4">
-                                            Me, four other interns, and our full-time lead started implementing the design team's vision for the project in early May. We worked well together and quickly blew past our goals for the summer. We'd brainstorm together to solve challenges we were facing from both a technical and design perspecitive, and regularly met up with people from across the organization to pick their brains. We also conducted biweekly user tests to get a gauge of our progress and how people responded to it. At the end of the summer, our team of interns was recognized as a finalist for "Most Competentent and Collaborative Team" at UIUC's Research Park, and Brunswick's executives were blown away by our progress.
-                                        </p>
-                                        <p class="mb-4">
-                                            Throughout the fall semester, we kept refining and improving the project, spending a lot of late nights at the office to get it prepped and bug-free for the show. At the end of the semester, we shipped it off after a final build.
-                                        </p> 
-                                        <h1>Technical Details</h1>
-                                        <p class="mb-4">
-                                            The helm itself is built much like an actual boat is. It has a real throttle, joystick, and steering wheel, which send CAN messages that we then decoded with a Python script. From there, we could use that as input into Unreal Engine 5, the game engine we were running the project off of. We chose Unreal for its massive library of free assets, the astonishing advancements in rendering that come with Nanite and Lumen, and its ability to do virtual production with nDisplay.
-                                        </p>
-                                        <p class="mb-4">
-                                            There were two main displays: the wraparound, 140 degree screen, and the MFD, which displayed notifications and info like speed, direction, and battery life much like a car. Both of these displays ran off of a separate computer connected by Ethernet.
-                                        </p>
-                                        <p class="mb-4">
-                                            One of my favorite subprojects was creating procedural assets for the project. As we were designing our environment, we realized we would need hundreds of custom assets. I used Blender and Python to create an extensive tool to procedurally model and texture game-ready assets, with minimal manual labor needed.
-                                        </p>
-                                        <h1>Response</h1>
-                                        <p class="mb-4">
-                                            The response to the Future Helm was an overwhelming success, from attendees to the media. A few journalists listed the Future Helm as one of the top things to see at the show. NBC opened their coverage of all CES at Brunswick's exhibit. It was so realistic that a few people thought we installed actuators in the floor to simulate the bobbing motion of a boat. Our graphics team was particularly happy that people from Epic Games kept coming over to check out what we accomplished with their game engine. The U.S. Secretary of Energy even took it out for a spin. The Future Helm was the centerpiece of the Brunswick exhibit, and it helped establish the company as a major player not just in the boating world, but in the tech industry as a whole.
-                                        </p>
-                                    </div>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- CARLA-->
-        <div class="portfolio-modal modal fade" id="carla" tabindex="-1" aria-labelledby="carla" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"></div>
-                    <div class="modal-body text-start pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Synthetic Data Generation with CARLA</h2>
-                                    <br/>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img src="/assets/img/carla.png" alt="CARLA image here" style="width: 100%;" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <div style="justify-content: left;">
-                                        <h1>Technology</h1>
-                                        <ul>
-                                            <li class="lead">Unreal Engine 4</li>
-                                            <li class="lead">Python</li>
-                                        </ul>
-                                        <h1>About</h1>
-                                        <p class="mb-4">Today's artificial intelligence systems require a lot of data to train on. As Brunswick develops its autonomous boating capabilities, we find ourselves in need of more and more training data. This data is often hard to collect, as many of the situations we want to test for may be too dangerous for human drivers, or too rare to test too often. I explored CARLA as a potential solution to this problem. CARLA is an open-source plugin for Unreal, originally intended for virtually training autonomous cars and other land vehicles. I adapted the system for a marine environment. With this modified version, we could control boat traffic, the weather, time of day, the environment, and even more, while recording simulated sensor data like RGB cameras, stereocameras, and LiDAR sensors.</p>
-                                    </div>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Blender Addons-->
-        <div class="portfolio-modal modal fade" id="blender" tabindex="-1" aria-labelledby="blender" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"></div>
-                    <div class="modal-body text-start pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Blender add-on development</h2>
-                                    <br/>
-                                    <!-- Portfolio Modal - Image-->
-                                    <table style="margin-left: auto; margin-right: auto;">
-                                        <tr>
-                                            <td>
-                                                <img class="img-fluid rounded mb-5" src="https://github.com/BrendanParmer/Block-On/blob/imgs/imgs/build_animation.gif?raw=true" alt="Animation created with the Block On addon" />
-                                            </td>
-                                            <td>
-                                                <img class="img-fluid rounded mb-5" src="https://github.com/BrendanParmer/NodeToPython/blob/main/docs/img/ntp.jpg?raw=true" alt="Node To Python" />
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- Portfolio Modal - Text-->
-                                    <div style="justify-content: left;">
-                                        <h1>Technology</h1>
-                                        <ul>
-                                            <li class="lead">Python</li>
-                                            <li class="lead">Blender</li>
-                                        </ul>
-                                        <h1>About</h1>
-                                        <p class="mb-4">3D computer graphics is a big passion of mine, and Blender's API makes it possible for me to combine my programming knowledge with the art world. I've released a couple add-ons so far. <a href="https://github.com/BrendanParmer/Block-On">Block On</a> is a procedural voxelization addon I designed to address some of the issues with Blender's in-built voxelization tool. <a href="https://github.com/BrendanParmer/NodeToPython">Node To Python</a> is an addon that allows users to convert large node groups to simple Python scripts, which makes addon development much easier when working with these node groups.</p>
-                                        <h2>Node To Python</h2>
-                                        <p class="mb-4">Blender's got great procedural systems, and I love creating things with them. They aren't all powerful though, and often there's times you want to do some scripting to get a desired result. Node To Python allows people to combine Python with Blender node groups without needing to recreate them all.</p>
-                                        <h2>Block On</h2>
-                                        <p class="mb-4">I created this add-on as a way to instantly turn any 3D object into a blocky version of itself within Blender.</p>
-                                        <p class="mb-4">Blender's built-in voxelization modifier doesn't preserve material information, and it can be somewhat slow. Block On uses Geometry Nodes to not only quickly voxelize the object, but also give the user control over more variables, including:</p>
-                                        <ul>
-                                            <li>Size</li>
-                                            <li>Resolution</li>
-                                            <li>Levels Visible</li>
-                                            <li>and more!</li>
-                                        </ul>
-                                        <p class="mb-4">Using Geometry Nodes allows the user to easily build on top of the node network for their own needs. The variables all are fully animatable, which can produce some really neat effects.</p>
-                                        <p class="mb-4">The project is currently in version 1.1 and is compatible with Blender 3.0-3.3.</p>
-                                    </div>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="container"><small>Copyright &copy; Brendan Parmer 2022-2024</small></div>
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
