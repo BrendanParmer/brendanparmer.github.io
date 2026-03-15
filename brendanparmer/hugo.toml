@@ -1,0 +1,36 @@
+baseURL = 'https://brendanparmer.github.io/'
+languageCode = 'en-us'
+title = 'Brendan Parmer'
+theme = 'hermit-v2'
+
+enableEmoji = true
+
+[menu]  
+    [[menu.main]]
+        name = "About"
+        url = "about/"
+    
+    [[menu.main]]
+        name = "Résumé"
+        url = "assets/resume.pdf"
+
+[params]
+    description = "Graphics programmer"
+    footerHideThemeName = true
+    shareSocial = true
+    scrollToTop = true
+    usesAnimation = false
+    justifyContent = false
+
+    [[params.socialLinks]]
+        name = "github"
+        url = "https://github.com/BrendanParmer"
+
+    [[params.socialLinks]]
+        name = "linkedin"
+        url = "https://www.linkedin.com/in/brendan-parmer/"
+
+    [[params.socialLinks]]
+        name = "email"
+        url = "mailto:brendanparmer+contact@gmail.com"
+
