@@ -17,7 +17,7 @@ enableEmoji = true
 [params]
     description = "Graphics programmer"
     footerHideThemeName = true
-    shareSocial = true
+    shareSocial = false
     scrollToTop = true
     usesAnimation = false
     justifyContent = false
@@ -33,6 +33,7 @@ enableEmoji = true
     [[params.socialLinks]]
         name = "email"
         url = "mailto:brendanparmer+contact@gmail.com"
+
 
 [caches]
     [caches.images]
