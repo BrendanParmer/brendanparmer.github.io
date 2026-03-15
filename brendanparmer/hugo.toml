@@ -34,3 +34,6 @@ enableEmoji = true
         name = "email"
         url = "mailto:brendanparmer+contact@gmail.com"
 
+[caches]
+    [caches.images]
+        dir = ':cacheDir/images'
