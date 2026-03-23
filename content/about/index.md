@@ -9,8 +9,8 @@ Hello! I'm a graphics software engineer, add-on creator, and 3D generalist.
 I graduated from UIUC in 2023 with a degree in Mathematics and Computer Science
 
 I've had the privilege to work on many cool projects, including:
-* [NodeToPython](https://extensions.blender.org/add-ons/node-to-python/) - A Blender add-on for making add-ons out with Geometry Nodes, Materials, Compositor nodes, and more.
-    ![NodeToPython logo](images/node_to_python.png)
+* [NodeToPython](https://extensions.blender.org/add-ons/node-to-python/) - A Blender add-on for making add-ons out with Geometry Nodes, Materials, Compositor nodes, and more. You can read up a bit more on the project [here](/nodetopython/)
+    ![NodeToPython logo](/assets/img/node_to_python.png)
 
 * [Vital FVS 100](https://www.frasca.com/frasca-advances-flight-training-technology-with-new-visual-system-powered-by-unreal-engine/) - Frasca International's new Unreal Engine 5-powered image generator for flight simulation
     ![Plane flying in Vital FVS 100](images/vital_fvs_100.png)
